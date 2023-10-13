@@ -1,0 +1,93 @@
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: white;
+  }
+  
+  .tabela {
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+
+  
+    &__cabecalho {
+      color: var(--primary);
+  
+      &__conteudo {
+        padding: 0px;
+        border-bottom: 0px solid #bfbfbf;
+      }
+    }
+  
+    &__imagem{
+      width: 200px;
+      height: 320px;
+      border-radius: 0.5rem;
+    }
+
+    @media screen and (max-width: 570px) {
+      &__textos{
+        text-align: left;
+        margin: 1rem 0;
+      }
+
+      &__imagem{
+        width: 150px;
+        height: 230px;
+        float: left;
+        padding: 1rem;
+      }
+    }
+
+    &__textos{
+     
+      text-align: left;
+
+      &__descricao {
+        font-size: 1.1rem;
+        padding: 1rem 0;
+      }
+      @media screen and (max-width: 570px) {
+        &__descricao {
+          font-size: 1.1rem;
+          padding: 1rem 0;
+          margin: 1rem;
+        }
+      }
+    }
+    
+
+    &__linha {
+      margin-bottom: 10px;
+      border-radius: 4px;
+  
+      &:last-child {
+        .tabela__conteudo {
+          border-bottom: none;
+        }
+      }
+    }
+  
+    &__conteudo {
+      padding: 15px;
+      border-bottom: 1px solid var(--cinza-claro);
+    }
+  
+    @media screen and (max-width: 570px) {
+      &__conteudo {
+        display: contents;
+        text-align: left;
+      }
+    }
+    
+  }
+
+  @media screen and (max-width: 570px) {
+    .container {
+      padding: 0 1rem;
+    }
+  }
+  

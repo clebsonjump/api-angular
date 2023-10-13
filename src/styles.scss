@@ -1,0 +1,28 @@
+:root {
+  --primary: #f44336;
+  --secondary: #25729f;
+  --padding: 15px;
+  --cinza: #25729f;
+  --cinza-claro: #bfbfbf;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color:inherit;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding: 0 20rem;
+  margin: 0 auto;
+}
+
+

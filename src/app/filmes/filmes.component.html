@@ -1,0 +1,29 @@
+<section class="container">
+    <h2 class="titulo">Listagem de Filmes</h2>
+  <table class="tabela">
+    <thead class="tabela__cabecalho">
+      <th class="tabela__cabecalho__conteudo"></th>
+      <th class="tabela__cabecalho__conteudo"></th>
+
+    </thead>
+    <tbody *ngIf="filmes?.length > 0; else listaVazia">
+      <tr class="tabela__linha" *ngFor="let filmes of filmes">
+        <td class="tabela__conteudo"><img class ="tabela__imagem"src="{{ filmes?.poster }}"></td>
+        <td class="tabela__conteudo tabela__textos"> 
+          <div class="tabela__textos">
+            <h1>{{ filmes?.nome }}</h1>
+            <p>Ano: {{ filmes?.ano }}<p>
+            <p>Diretor: {{ filmes?.diretor }}</p>
+            <p>Gênero: {{ filmes?.genero }}</p>
+        </div>
+        <p class="tabela__textos__descricao col-12 col-sm-6 col-lg-8">{{ filmes?.descricao }}</p>
+        </td>
+      
+      </tr>
+    </tbody>
+  </table>
+
+  <ng-template #listaVazia>
+    <p>Nenhum filme encontrado.</p>
+  </ng-template>
+</section>
